@@ -12,7 +12,7 @@ Because **ConcisePureLayout** was based on [PureLayout library](https://github.c
 
 ##Examples
 In this screenshot, every UI element was placed by **ConcisePureLayout** category methods:
-![ConcisePureLayoutScreenshot1.png]({{site.baseurl}}/ConcisePureLayoutScreenshot1.png)
+![ConcisePureLayoutScreenshot1.png](https://github.com/mixdesign/ConcisePureLayout/blob/master/ConcisePureLayoutScreenshot1.png)
 
 
 #Contribution
