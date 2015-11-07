@@ -67,7 +67,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CE29C8B11BEE89610089958A /* ConsicePureLayout */ = {
+		CE29C8B11BEE89610089958A /* ConcisePureLayout */ = {
 			isa = PBXGroup;
 			children = (
 				CE29C8B21BEE89610089958A /* NSLayoutConstraint+AAPureLayout.h */,
@@ -75,8 +75,8 @@
 				CE29C8B41BEE89610089958A /* UIView+ConcisePureLayout.h */,
 				CE29C8B51BEE89610089958A /* UIView+ConcisePureLayout.m */,
 			);
-			name = ConsicePureLayout;
-			path = ../../../ConsicePureLayout;
+			name = ConcisePureLayout;
+			path = ../../../ConcisePureLayout;
 			sourceTree = "<group>";
 		};
 		CEC028571BEE5E68001495AF = {
@@ -100,7 +100,7 @@
 		CEC028621BEE5E68001495AF /* ConcisePureLayoutExample */ = {
 			isa = PBXGroup;
 			children = (
-				CE29C8B11BEE89610089958A /* ConsicePureLayout */,
+				CE29C8B11BEE89610089958A /* ConcisePureLayout */,
 				CEC028661BEE5E68001495AF /* AppDelegate.h */,
 				CEC028671BEE5E68001495AF /* AppDelegate.m */,
 				CEC028691BEE5E68001495AF /* ViewController.h */,
