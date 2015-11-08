@@ -10,6 +10,8 @@ Pod::Spec.new do |s|
 # Source Info
   s.platform     =  :ios, '7.0'
   s.source       =  { :git => 'https://github.com/mixdesign/ConcisePureLayout.git', :tag => "0.1.0" }
-  s.source_files  = "ConcisePureLayout/*.{h,m}"
+  s.source_files = 'ConcisePureLayout/**/*.{h,m}'
+  s.public_header_files = 'ConcisePureLayout/**/*.h'
+  s.dependency 'PureLayout'
   s.requires_arc = true
 end
