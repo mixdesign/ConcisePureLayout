@@ -45,7 +45,7 @@ UIView * footerView = [UIView newAutoLayoutView];
 ```
 
 **Example project**<br>
-This screenshot demonstrates how you can create and place complex UI elements with **ConcisePureLayout**:
+This screenshot demonstrates how you can create and place complex UI elements with ConcisePureLayout:
 ![ConcisePureLayoutScreenshot1.png](https://github.com/mixdesign/ConcisePureLayout/blob/master/ConcisePureLayoutScreenshot1.png)
 
 #Contribution
