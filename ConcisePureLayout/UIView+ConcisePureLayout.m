@@ -14,7 +14,7 @@
 #pragma mark -
 #pragma mark Common.
 
-- (NSArray *)aa_autoSetDimensions {
+- (NSArray *)aa_setDimensions {
     return [self autoSetDimensionsToSize:self.frame.size];
 }
 
@@ -29,8 +29,23 @@
     return [self autoAlignAxisToSuperviewAxis:ALAxisHorizontal];
 }
 
+- (NSLayoutConstraint *)aa_centerVerticalWithOffset:(CGFloat)offset {
+    return [self autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self.superview withOffset:offset];
+}
+
 - (NSLayoutConstraint *)aa_centerHorizontal {
     return [self autoAlignAxisToSuperviewAxis:ALAxisVertical];
+}
+
+- (NSLayoutConstraint *)aa_centerHorizontalWithOffset:(CGFloat)offset {
+    return [self autoAlignAxis:ALAxisVertical toSameAxisOfView:self.superview withOffset:offset];
+}
+
+- (NSArray *)aa_centerWithView:(UIView *)view {
+    NSMutableArray * constraints = [NSMutableArray array];
+    [constraints addObject:[self autoAlignAxis:ALAxisHorizontal toSameAxisOfView:view]];
+    [constraints addObject:[self autoAlignAxis:ALAxisVertical toSameAxisOfView:view]];
+    return constraints;
 }
 
 - (NSArray *)aa_centerInSuperview {
@@ -61,12 +76,19 @@
     return [self autoPinEdge:ALEdgeRight toEdge:ALEdgeLeft ofView:view withOffset:-offset];
 }
 
+- (NSLayoutConstraint *)aa_pinAboveView:(UIView *)view {
+    return [self aa_pinUnderView:view offset:0];
+}
+
+- (NSLayoutConstraint *)aa_pinAboveView:(UIView *)view offset:(CGFloat)offset {
+    return [self autoPinEdge:ALEdgeBottom toEdge:ALEdgeTop ofView:view withOffset:-offset];
+}
+
 - (NSLayoutConstraint *)aa_pinUnderView:(UIView *)view {
     return [self aa_pinUnderView:view offset:0];
 }
 
-- (NSLayoutConstraint *)aa_pinUnderView:(UIView *)view offset:(CGFloat)offset
-{
+- (NSLayoutConstraint *)aa_pinUnderView:(UIView *)view offset:(CGFloat)offset {
     return [self autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:view withOffset:offset];
 }
 

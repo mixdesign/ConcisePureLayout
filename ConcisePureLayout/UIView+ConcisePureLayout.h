@@ -10,12 +10,16 @@
 
 @interface UIView (ConcisePureLayout)
 
-- (NSArray *)aa_autoSetDimensions;
+- (NSArray *)aa_setDimensions;
 
 // Aligns
 - (NSLayoutConstraint *)aa_verticalAlignWithView:(UIView *)view;
 - (NSLayoutConstraint *)aa_centerVertical;
+- (NSLayoutConstraint *)aa_centerVerticalWithOffset:(CGFloat)offset;
 - (NSLayoutConstraint *)aa_centerHorizontal;
+- (NSLayoutConstraint *)aa_centerHorizontalWithOffset:(CGFloat)offset;
+
+- (NSArray *)aa_centerWithView:(UIView *)view;
 - (NSArray *)aa_centerInSuperview;
 
 - (NSLayoutConstraint *)aa_verticalAlignWith:(UIView *)view;
@@ -27,6 +31,8 @@
 - (NSLayoutConstraint *)aa_pinBeforeView:(UIView *)view;
 - (NSLayoutConstraint *)aa_pinBeforeView:(UIView *)view offset:(CGFloat)offset;
 
+- (NSLayoutConstraint *)aa_pinAboveView:(UIView *)view;
+- (NSLayoutConstraint *)aa_pinAboveView:(UIView *)view offset:(CGFloat)offset;
 - (NSLayoutConstraint *)aa_pinUnderView:(UIView *)view;
 - (NSLayoutConstraint *)aa_pinUnderView:(UIView *)view offset:(CGFloat)offset;
 

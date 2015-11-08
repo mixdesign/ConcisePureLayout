@@ -49,14 +49,14 @@
 
     // Avatar container.
     UIImageView *avatarContainer = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"avatarCircleBackground.png"]];
-    [avatarContainer aa_autoSetDimensions];
+    [avatarContainer aa_setDimensions];
     [contentView addSubview:avatarContainer];
     [avatarContainer aa_pinUnderView:headerView offset:-100];
     [avatarContainer aa_centerHorizontal];
 
     // Avatar view.
     UIImageView *avatarView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"almasAvatar.png"]];
-    [avatarView aa_autoSetDimensions];
+    [avatarView aa_setDimensions];
     [avatarContainer addSubview:avatarView];
     [avatarView aa_centerInSuperview];
 
@@ -139,7 +139,7 @@
     UIView * view = [UIView newAutoLayoutView];
 
     UIImageView *iconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:iconName]];
-    [iconView aa_autoSetDimensions];
+    [iconView aa_setDimensions];
     [view addSubview:iconView];
     [iconView aa_superviewLeft:0];
     [iconView aa_superviewTop:0];
