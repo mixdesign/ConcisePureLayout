@@ -4,7 +4,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSLayoutConstraint (AAPureLayout)
+@interface NSLayoutConstraint (ConcisePureLayout)
 
 - (CGFloat)aa_autoRemove;
 

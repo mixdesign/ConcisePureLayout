@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0FE56A2AA3E88956580E1256 /* libPods-ConcisePureLayoutExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B00B4D06131B544B7C11AB /* libPods-ConcisePureLayoutExample.a */; };
-		CE29C8B61BEE89610089958A /* NSLayoutConstraint+AAPureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29C8B31BEE89610089958A /* NSLayoutConstraint+AAPureLayout.m */; };
+		CE29C8B61BEE89610089958A /* NSLayoutConstraint+ConcisePureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29C8B31BEE89610089958A /* NSLayoutConstraint+ConcisePureLayout.m */; };
 		CE29C8B71BEE89610089958A /* UIView+ConcisePureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29C8B51BEE89610089958A /* UIView+ConcisePureLayout.m */; };
 		CEC028651BEE5E68001495AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC028641BEE5E68001495AF /* main.m */; };
 		CEC028681BEE5E68001495AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC028671BEE5E68001495AF /* AppDelegate.m */; };
@@ -20,8 +20,8 @@
 
 /* Begin PBXFileReference section */
 		37B00B4D06131B544B7C11AB /* libPods-ConcisePureLayoutExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ConcisePureLayoutExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE29C8B21BEE89610089958A /* NSLayoutConstraint+AAPureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+AAPureLayout.h"; sourceTree = "<group>"; };
-		CE29C8B31BEE89610089958A /* NSLayoutConstraint+AAPureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+AAPureLayout.m"; sourceTree = "<group>"; };
+		CE29C8B21BEE89610089958A /* NSLayoutConstraint+ConcisePureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+ConcisePureLayout.h"; sourceTree = "<group>"; };
+		CE29C8B31BEE89610089958A /* NSLayoutConstraint+ConcisePureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+ConcisePureLayout.m"; sourceTree = "<group>"; };
 		CE29C8B41BEE89610089958A /* UIView+ConcisePureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ConcisePureLayout.h"; sourceTree = "<group>"; };
 		CE29C8B51BEE89610089958A /* UIView+ConcisePureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ConcisePureLayout.m"; sourceTree = "<group>"; };
 		CEC028601BEE5E68001495AF /* ConcisePureLayoutExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcisePureLayoutExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,8 +70,8 @@
 		CE29C8B11BEE89610089958A /* ConcisePureLayout */ = {
 			isa = PBXGroup;
 			children = (
-				CE29C8B21BEE89610089958A /* NSLayoutConstraint+AAPureLayout.h */,
-				CE29C8B31BEE89610089958A /* NSLayoutConstraint+AAPureLayout.m */,
+				CE29C8B21BEE89610089958A /* NSLayoutConstraint+ConcisePureLayout.h */,
+				CE29C8B31BEE89610089958A /* NSLayoutConstraint+ConcisePureLayout.m */,
 				CE29C8B41BEE89610089958A /* UIView+ConcisePureLayout.h */,
 				CE29C8B51BEE89610089958A /* UIView+ConcisePureLayout.m */,
 			);
@@ -228,7 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC0286B1BEE5E68001495AF /* ViewController.m in Sources */,
-				CE29C8B61BEE89610089958A /* NSLayoutConstraint+AAPureLayout.m in Sources */,
+				CE29C8B61BEE89610089958A /* NSLayoutConstraint+ConcisePureLayout.m in Sources */,
 				CE29C8B71BEE89610089958A /* UIView+ConcisePureLayout.m in Sources */,
 				CEC028681BEE5E68001495AF /* AppDelegate.m in Sources */,
 				CEC028651BEE5E68001495AF /* main.m in Sources */,

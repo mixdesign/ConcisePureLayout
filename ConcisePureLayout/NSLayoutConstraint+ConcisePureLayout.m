@@ -1,7 +1,7 @@
 #import <PureLayout/NSLayoutConstraint+PureLayout.h>
-#import "NSLayoutConstraint+AAPureLayout.h"
+#import "NSLayoutConstraint+ConcisePureLayout.h"
 
-@implementation NSLayoutConstraint (AAPureLayout)
+@implementation NSLayoutConstraint (ConcisePureLayout)
 
 - (CGFloat)aa_autoRemove {
     CGFloat constant = self.constant;
