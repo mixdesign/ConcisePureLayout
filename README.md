@@ -1,4 +1,6 @@
 # ConcisePureLayout
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mixdesign/ConcisePureLayout?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 **ConcisePureLayout** was created to facilitate the method invocations of [PureLayout library](https://github.com/PureLayout/PureLayout "PureLayout github page"). _(Objective-C only, Swift comming next)._
 
 ##Installation
