@@ -1,5 +1,14 @@
-#import <PureLayout/NSLayoutConstraint+PureLayout.h>
+//
+//  NSLayoutConstraint+ConcisePureLayout.m
+//  ConcisePureLayoutExample
+//
+//  Created by Almas Adilbek on 4/24/15.
+//  Copyright (c) 2015 Almas Adilbek. All rights reserved.
+//
+
 #import "NSLayoutConstraint+ConcisePureLayout.h"
+
+#import <PureLayout/NSLayoutConstraint+PureLayout.h>
 
 @implementation NSLayoutConstraint (ConcisePureLayout)
 
@@ -8,6 +17,5 @@
     [self autoRemove];
     return constant;
 }
-
 
 @end
