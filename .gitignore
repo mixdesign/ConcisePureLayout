@@ -19,3 +19,4 @@ DerivedData
 Build/*
 Pods
 Podfile.lock
+Example/Design
