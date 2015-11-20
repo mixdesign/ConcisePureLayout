@@ -20,3 +20,4 @@ Build/*
 Pods
 Podfile.lock
 Example/Design
+*.xcworkspace
