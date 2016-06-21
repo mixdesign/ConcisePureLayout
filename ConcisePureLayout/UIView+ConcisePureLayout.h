@@ -16,7 +16,7 @@
  *
  *  @return Array of resulting NSLayoutConstraint objects.
  */
-- (__NSArray_of(NSLayoutConstraint *) *)aa_setDimensions;
+- (NSArray *)aa_setDimensions;
 
 #pragma mark - Aligning
 
@@ -222,7 +222,7 @@
  *
  *  @return Array of resulting NSLayoutConstraint objects.
  */
-- (__NSArray_of(NSLayoutConstraint *) *)aa_topAndBottom:(UIView *)view;
+- (NSArray *)aa_topAndBottom:(UIView *)view;
 
 /**
  *  Pins the left edge of the view to the same edge of another view.
@@ -269,7 +269,7 @@
  *
  *  @return Array of resulting NSLayoutConstraint objects.
  */
-- (__NSArray_of(NSLayoutConstraint *) *)aa_leftAndRight:(UIView *)view;
+- (NSArray *)aa_leftAndRight:(UIView *)view;
 
 /**
  *  Pins the leading edge of the view to the same edge of another view.
@@ -316,7 +316,7 @@
  *
  *  @return Array of resulting NSLayoutConstraint objects.
  */
-- (__NSArray_of(NSLayoutConstraint *) *)aa_leadingAndTrailing:(UIView *)view;
+- (NSArray *)aa_leadingAndTrailing:(UIView *)view;
 
 /**
  *  Pins the top edge of the view to the same edge of its superview with an inset.
@@ -395,7 +395,7 @@
  *
  *  @return Array of resulting NSLayoutConstraint objects.
  */
-- (__NSArray_of(NSLayoutConstraint *) *)aa_superviewFitWidth;
+- (NSArray *)aa_superviewFitWidth;
 
 /**
  *  Pins both the left and the right edges of the view to the same edges of its superview with an inset.
@@ -404,14 +404,14 @@
  *
  *  @return Array of resulting NSLayoutConstraint objects.
  */
-- (__NSArray_of(NSLayoutConstraint *) *)aa_superviewFitWidthWithInset:(CGFloat)inset;
+- (NSArray *)aa_superviewFitWidthWithInset:(CGFloat)inset;
 
 /**
  *  Pins both the top and the bottom edges of the view to the same edges of its superview.
  *
  *  @return Array of resulting NSLayoutConstraint objects.
  */
-- (__NSArray_of(NSLayoutConstraint *) *)aa_superviewFitHeight;
+- (NSArray *)aa_superviewFitHeight;
 
 /**
  *  Pins both the top and the bottom edges of the view to the same edges of its superview with an inset struct.
@@ -420,7 +420,7 @@
  *
  *  @return Array of resulting NSLayoutConstraint objects.
  */
-- (__NSArray_of(NSLayoutConstraint *) *)aa_superviewFitHeightWithInset:(CGFloat)inset;
+- (NSArray *)aa_superviewFitHeightWithInset:(CGFloat)inset;
 
 /**
  *  Pins edges of the view to the same edges of its superview with an insets.
@@ -429,7 +429,7 @@
  *
  *  @return Array of resulting NSLayoutConstraint objects.
  */
-- (__NSArray_of(NSLayoutConstraint *) *)aa_superviewWithInsets:(UIEdgeInsets)insets;
+- (NSArray *)aa_superviewWithInsets:(UIEdgeInsets)insets;
 
 /**
  *  Pins top, left, bottom, right edges of the view to the same edges of its superview with an insets. Very handy for code readability.
@@ -438,7 +438,7 @@
  *
  *  @return Array of resulting NSLayoutConstraint objects.
  */
-- (__NSArray_of(NSLayoutConstraint *) *)aa_superviewTop:(CGFloat)top left:(CGFloat)left bottom:(CGFloat)bottom right:(CGFloat)right;
+- (NSArray *)aa_superviewTop:(CGFloat)top left:(CGFloat)left bottom:(CGFloat)bottom right:(CGFloat)right;
 
 /**
  *  Pins top, left, bottom, right edges of the view to the same edges of its superview with an inset.
@@ -447,7 +447,7 @@
  *
  *  @return Array of resulting NSLayoutConstraint objects.
  */
-- (__NSArray_of(NSLayoutConstraint *) *)aa_superviewFillWithInset:(CGFloat)inset;
+- (NSArray *)aa_superviewFillWithInset:(CGFloat)inset;
 
 #pragma mark - Dimensions
 

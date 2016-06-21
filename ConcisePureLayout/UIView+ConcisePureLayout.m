@@ -10,7 +10,7 @@
 
 @implementation UIView (ConcisePureLayout)
 
-- (__NSArray_of(NSLayoutConstraint *) *)aa_setDimensions {
+- (NSArray *)aa_setDimensions {
     return [self autoSetDimensionsToSize:self.frame.size];
 }
 
@@ -40,11 +40,11 @@
     return [self autoAlignAxis:ALAxisVertical toSameAxisOfView:self.superview withOffset:offset];
 }
 
-- (__NSArray_of(NSLayoutConstraint *) *)aa_centerWithView:(UIView *)view {
+- (NSArray *)aa_centerWithView:(UIView *)view {
     return @[[self aa_verticalAlignWithView:view], [self aa_horizontalAlignWithView:view]];
 }
 
-- (__NSArray_of(NSLayoutConstraint *) *)aa_centerInSuperview {
+- (NSArray *)aa_centerInSuperview {
     return @[[self aa_centerHorizontal], [self aa_centerVertical]];
 }
 
@@ -102,7 +102,7 @@
     return [self autoPinEdge:ALEdgeBottom toEdge:ALEdgeBottom ofView:view withOffset:offset];;
 }
 
-- (__NSArray_of(NSLayoutConstraint *) *)aa_topAndBottom:(UIView *)view {
+- (NSArray *)aa_topAndBottom:(UIView *)view {
     return @[[self aa_top:view], [self aa_bottom:view]];
 }
 
@@ -122,7 +122,7 @@
     return [self autoPinEdge:ALEdgeRight toEdge:ALEdgeRight ofView:view withOffset:offset];
 }
 
-- (__NSArray_of(NSLayoutConstraint *) *)aa_leftAndRight:(UIView *)view {
+- (NSArray *)aa_leftAndRight:(UIView *)view {
     return @[[self aa_left:view], [self aa_right:view]];
 }
 
@@ -142,7 +142,7 @@
     return [self autoPinEdge:ALEdgeTrailing toEdge:ALEdgeTrailing ofView:view withOffset:offset];
 }
 
-- (__NSArray_of(NSLayoutConstraint *) *)aa_leadingAndTrailing:(UIView *)view {
+- (NSArray *)aa_leadingAndTrailing:(UIView *)view {
   return @[[self aa_leading:view], [self aa_trailing:view]];
 }
 
@@ -178,31 +178,31 @@
     return [self autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:inset relation:relation];
 }
 
-- (__NSArray_of(NSLayoutConstraint *) *)aa_superviewFitWidth {
+- (NSArray *)aa_superviewFitWidth {
     return [self aa_superviewFitWidthWithInset:0];
 }
 
-- (__NSArray_of(NSLayoutConstraint *) *)aa_superviewFitWidthWithInset:(CGFloat)inset {
+- (NSArray *)aa_superviewFitWidthWithInset:(CGFloat)inset {
     return @[[self aa_superviewLeft:inset], [self aa_superviewRight:inset]];
 }
 
-- (__NSArray_of(NSLayoutConstraint *) *)aa_superviewFitHeight {
+- (NSArray *)aa_superviewFitHeight {
     return [self aa_superviewFitHeightWithInset:0];
 }
 
-- (__NSArray_of(NSLayoutConstraint *) *)aa_superviewFitHeightWithInset:(CGFloat)inset {
+- (NSArray *)aa_superviewFitHeightWithInset:(CGFloat)inset {
     return @[[self aa_superviewTop:inset], [self aa_superviewBottom:inset]];
 }
 
-- (__NSArray_of(NSLayoutConstraint *) *)aa_superviewWithInsets:(UIEdgeInsets)insets {
+- (NSArray *)aa_superviewWithInsets:(UIEdgeInsets)insets {
     return [self autoPinEdgesToSuperviewEdgesWithInsets:insets];
 }
 
-- (__NSArray_of(NSLayoutConstraint *) *)aa_superviewTop:(CGFloat)top left:(CGFloat)left bottom:(CGFloat)bottom right:(CGFloat)right {
+- (NSArray *)aa_superviewTop:(CGFloat)top left:(CGFloat)left bottom:(CGFloat)bottom right:(CGFloat)right {
     return @[[self aa_superviewTop:top], [self aa_superviewLeft:left], [self aa_superviewBottom:bottom], [self aa_superviewRight:right]];
 }
 
-- (__NSArray_of(NSLayoutConstraint *) *)aa_superviewFillWithInset:(CGFloat)inset {
+- (NSArray *)aa_superviewFillWithInset:(CGFloat)inset {
     return @[[self aa_superviewTop:inset], [self aa_superviewLeft:inset], [self aa_superviewBottom:inset], [self aa_superviewRight:inset]];
 }
 

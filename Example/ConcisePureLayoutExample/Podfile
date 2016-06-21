@@ -1,5 +1,5 @@
 platform :ios, :deployment_target => '7.0'
 
 target 'ConcisePureLayoutExample' do
-pod 'PureLayout', '3.0.1'
+pod 'PureLayout', '3.0.2'
 end
