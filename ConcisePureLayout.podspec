@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'ConcisePureLayout'
-  s.version      = '0.2.3'
+  s.version      = '0.3.0'
   s.license      =  { :type => 'MIT', :file => 'LICENSE' }
   s.authors      =  { 'Almas Adilbek' => 'almas.adilbek@gmail.com' }
   s.social_media_url   = "http://twitter.com/mixdesign"
@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.source       =  { :git => 'https://github.com/mixdesign/ConcisePureLayout.git', :tag => s.version.to_s }
   s.source_files = 'ConcisePureLayout/**/*.{h,m}'
   s.public_header_files = 'ConcisePureLayout/**/*.h'
-  s.dependency 'PureLayout', '~> 3.0.1'
+  s.dependency 'PureLayout', '~> 3.0.2'
   s.requires_arc = true
 end
