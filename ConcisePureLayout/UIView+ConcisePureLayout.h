@@ -499,6 +499,16 @@
 - (NSLayoutConstraint *)aa_sameWidthWith:(UIView *)view;
 
 /**
+ *  Sets the width of the view to the width of another view with multiplier.
+ *
+ *  @param view View to match the width to.
+ *  @param multiplier Dimension multiplier from 0..1
+ *
+ *  @return Resulting NSLayoutConstraint object.
+ */
+- (NSLayoutConstraint *)aa_sameWidthWith:(UIView *)view multiplier:(CGFloat)multiplier;
+
+/**
  *  Sets the height of the view to the height of another view.
  *
  *  @param view View to match the height to.
@@ -506,5 +516,15 @@
  *  @return Resulting NSLayoutConstraint object.
  */
 - (NSLayoutConstraint *)aa_sameHeightWith:(UIView *)view;
+
+/**
+ *  Sets the height of the view to the height of another view with multiplier.
+ *
+ *  @param view View to match the height to.
+ *  @param multiplier Dimension multiplier from 0..1
+ *
+ *  @return Resulting NSLayoutConstraint object.
+ */
+- (NSLayoutConstraint *)aa_sameHeightWith:(UIView *)view multiplier:(CGFloat)multiplier;
 
 @end

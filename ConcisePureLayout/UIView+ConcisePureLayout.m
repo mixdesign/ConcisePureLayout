@@ -228,8 +228,16 @@
     return [self autoMatchDimension:ALDimensionWidth toDimension:ALDimensionWidth ofView:view];
 }
 
+- (NSLayoutConstraint *)aa_sameWidthWith:(UIView *)view multiplier:(CGFloat)multiplier {
+    return [self autoMatchDimension:ALDimensionWidth toDimension:ALDimensionWidth ofView:view withMultiplier:multiplier];
+}
+
 - (NSLayoutConstraint *)aa_sameHeightWith:(UIView *)view {
-    return [self autoMatchDimension:ALDimensionHeight toDimension:ALDimensionHeight ofView:view];
+    return [self aa_sameHeightWith:view multiplier:1];
+}
+
+- (NSLayoutConstraint *)aa_sameHeightWith:(UIView *)view multiplier:(CGFloat)multiplier {
+    return [self autoMatchDimension:ALDimensionHeight toDimension:ALDimensionHeight ofView:view withMultiplier:multiplier];
 }
 
 @end
