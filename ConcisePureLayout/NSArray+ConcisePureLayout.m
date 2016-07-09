@@ -7,6 +7,7 @@
 //
 
 #import "NSArray+ConcisePureLayout.h"
+#import "UIView+ConcisePureLayout.h"
 
 @implementation NSArray (ConcisePureLayout)
 
@@ -36,6 +37,22 @@
         return self[3];
     }
     return nil;
+}
+
+- (NSArray *)aa_setViewsHeight:(CGFloat)height {
+    NSMutableArray * constraints = [NSMutableArray array];
+    for(UIView *view in self) {
+        [constraints addObject:[view aa_setHeight:height]];
+    }
+    return constraints;
+}
+
+- (NSArray *)aa_setViewsWidth:(CGFloat)width {
+    NSMutableArray * constraints = [NSMutableArray array];
+    for(UIView *view in self) {
+        [constraints addObject:[view aa_setWidth:width]];
+    }
+    return constraints;
 }
 
 

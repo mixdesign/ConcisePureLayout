@@ -6,8 +6,7 @@
 //  Copyright © 2016 Zenge. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <PureLayout/ALView+PureLayout.h>
+#import <UIKit/UIKit.h>
 
 @interface NSArray (ConcisePureLayout)
 
@@ -15,5 +14,8 @@
 - (NSLayoutConstraint *)leadingConstraint;
 - (NSLayoutConstraint *)bottomConstraint;
 - (NSLayoutConstraint *)trailingConstraint;
+
+- (NSArray *)aa_setViewsHeight:(CGFloat)height;
+- (NSArray *)aa_setViewsWidth:(CGFloat)width;
 
 @end

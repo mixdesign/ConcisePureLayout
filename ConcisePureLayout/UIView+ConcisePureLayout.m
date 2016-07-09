@@ -7,6 +7,7 @@
 //
 
 #import "UIView+ConcisePureLayout.h"
+#import <PureLayout/ALView+PureLayout.h>
 
 @implementation UIView (ConcisePureLayout)
 

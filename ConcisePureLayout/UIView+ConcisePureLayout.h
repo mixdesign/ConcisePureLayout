@@ -6,7 +6,6 @@
 //  Copyright (c) 2015 Almas Adilbek. All rights reserved.
 //
 
-#import <PureLayout/ALView+PureLayout.h>
 #import <UIKit/UIKit.h>
 
 @interface UIView (ConcisePureLayout)
